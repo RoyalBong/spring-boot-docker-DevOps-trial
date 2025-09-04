@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class SpringBootDockerApplication {
 	
-	@GetMapping("/message")
+	@GetMapping()
    public String getmessage() {
 	   return "Welcome to Docker!!!";
    }
