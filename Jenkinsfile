@@ -1,14 +1,14 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'
-        jdk 'JDK17'
-    }
+   // tools {
+        //maven 'Maven3'
+        //jdk 'JDK17'
+    //}
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/RoyalBong/spring-boot-docker-DevOps-trial.git', branch: 'main'
+                git url: 'https://github.com/RoyalBong/spring-boot-docker-DevOps-trial.git', branch: 'master'
             }
         }
         stage('Build and Test') {
