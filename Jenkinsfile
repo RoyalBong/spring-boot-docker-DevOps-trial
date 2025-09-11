@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'docker stop spring-boot-container || true'
                 sh 'docker rm spring-boot-container || true'
-                sh 'docker run -d -p 8080:8080 --name spring-boot-container spring-boot-app:latest'
+                sh 'docker run -d -p 9090:9090 --name spring-boot-container spring-boot-app:latest'
             }
         }
     }
